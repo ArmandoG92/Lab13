@@ -71,13 +71,20 @@ library(psych)
 
 library(readr)
 correl <- read_csv("correl.csv")
+View(correl)
 
+attach(correl)
+names(correl)
+pairs(correl)
+pairs.panels(correl)
 
 ### correl2
-
+complex_corr <- cor(correl,method = "pearson")
+complex_corr 
 # Calculamos la correlación 
 
-
+complex_corr = round(complex_corr,digits = 2)
+complex_corr 
 # Redondeamos
 
 
@@ -88,14 +95,18 @@ library(ggplot2)
 
 
 
+p4 <- ggcorrplot(complex_corr, method = "circle", type = "lower", lab = TRUE)+
+  ggtitle("Matriz de correlación")+
+  theme_minimal()
 p4
+
 
 
 #####
 install.packages("ggpubr")
 
 require(ggpubr)
-ggpubr :: ggarrange (p1, p2, p3, p4, etiquetas = c ("A", "B", "C" , "D"))
+ggpubr :: ggarrange (p1, p2, p3, p4, etiquetas = c ("A", "B", "C" , "D")) 
 
 #####
 
