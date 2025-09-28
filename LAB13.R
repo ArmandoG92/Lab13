@@ -53,7 +53,7 @@ p2
 
 p3 <- ggplot(data = green_data,
              mapping=aes(x=LPIBE,
-                         y=GCI_rank,))+
+                         y=GCI_index,))+
   geom_point()+
   geom_text(label= green_data$STATE,
             color= "black",

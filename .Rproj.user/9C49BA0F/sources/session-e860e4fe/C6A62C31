@@ -3,9 +3,9 @@
     "path": "~/GitHub/Lab13/LAB13.R",
     "project_path": "LAB13.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "2180409058",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1758663891116.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -17,11 +17,11 @@
         "scrollLine": "88"
     },
     "folds": "",
-    "lastKnownWriteTime": 1758669830,
+    "lastKnownWriteTime": 1759088148,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1759087825739,
+    "last_content_update": 1759088148372,
     "read_only": false,
     "read_only_alternatives": []
 }
